@@ -17,7 +17,7 @@ sha256sums=(
 
 pkgver() {
   cd ${srcdir}/${_pkgname}
-  git describe --long --abbrev=7 | sed 's/\([^-]*-g\)/r\1/;s/-/./g'
+  printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short=7 HEAD)"
 }
 
 prepare() {
