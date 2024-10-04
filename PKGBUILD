@@ -35,5 +35,5 @@ build() {
 
 package() {
   cd ${srcdir}/${_pkgname}
-  install -Dm0755 -t "$pkgdir/usr/bin/" target/release/{snx-rs,snxctl,snx-rs-gui}
+  install -Dm0755 -t "$pkgdir/usr/bin/" target/release/${_pkgname}
 }
