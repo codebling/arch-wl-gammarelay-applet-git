@@ -1,6 +1,6 @@
 _pkgname=wl-gammarelay-applet
 pkgname=${_pkgname}-git
-pkgver=x.x.x
+pkgver=r16.9b06dec
 pkgrel=1
 pkgdesc="Control wl-gammarelay-rs via applet"
 arch=(any)
