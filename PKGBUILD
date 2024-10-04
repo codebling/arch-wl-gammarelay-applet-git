@@ -30,6 +30,7 @@ build() {
   cd ${srcdir}/${_pkgname}
   export RUSTUP_TOOLCHAIN=stable
   export CARGO_TARGET_DIR=target
+  export RUSTFLAGS=-Awarnings       # Suppress warnings, as build generates a lot of then and they are not relevant to end user
   cargo build --frozen --release --all-features
 }
 
